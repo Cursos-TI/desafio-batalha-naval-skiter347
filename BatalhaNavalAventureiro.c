@@ -10,13 +10,26 @@ int main (){
     int i;
     int j;
     int matriz [linha][coluna]={0};
+
+                //navios diagonais adicionados
     matriz[2][2]=3;
     matriz[3][3]=3;                 //Não era pra tentar calcular algo, era so definir as localizações na matriz
     matriz[4][4]=3;
 
     matriz[9][1]=3;
-    matriz[8][2]=3;
+    matriz[8][2]=3;             
     matriz[7][3]=3;
+
+    //adicionando navios vertical e horizontal
+
+    matriz[1][1]=3;
+    matriz[1][2]=3;             
+    matriz[1][3]=3;
+    
+    matriz[3][0]=3;
+    matriz[2][0]=3;             
+    matriz[1][0]=3;
+    
     for ( i = 0; i < 10; i++)
     {   
         printf(" %c",cabeca[i]);
